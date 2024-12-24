@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AbhinavITSoultionsPvtLtd</string>
+    <string name="extended_fab_label">Add New</string>
+    <string name="extended_fab_content_desc">description\n</string>
+</resources>

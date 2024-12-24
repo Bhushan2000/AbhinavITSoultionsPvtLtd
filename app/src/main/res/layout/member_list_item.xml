@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="16dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/tvNameLabel"
+                    android:layout_width="0dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Member Name" />
+
+                <TextView
+                    android:id="@+id/tvNameValue"
+                    android:layout_width="0dp"
+                    android:textAlignment="viewEnd"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Member Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/tvMobileNumberLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:textStyle="bold"
+
+                    android:text="Mobile Number" />
+
+                <TextView
+                    android:id="@+id/tvMobileNumberValue"
+                    android:layout_width="0dp"
+                    android:textAlignment="viewEnd"
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Member Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/tvRoleLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:textStyle="bold"
+
+                    android:text="Member Role" />
+
+                <TextView
+                    android:id="@+id/tvRoleValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:textAlignment="viewEnd"
+
+                    android:text="Role" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/tvSubscriptionLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:textStyle="bold"
+
+                    android:text="Subscription Amt." />
+
+                <TextView
+                    android:id="@+id/tvSubscriptionValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:textAlignment="viewEnd"
+                    android:text="Subscription Amount" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_marginEnd="8dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/tvLoanAmountLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:text="Loan Amount" />
+
+                        <TextView
+                            android:id="@+id/tvLoanAmountValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:textAlignment="center"
+                            android:text="Subscription Amount" />
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+
+                    app:cardCornerRadius="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/tvDepositAmountLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:textStyle="bold"
+
+                            android:text="Deposit Amount" />
+
+                        <TextView
+                            android:id="@+id/tvDepositAmountValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:textAlignment="center"
+
+                            android:text="Subscription Amount" />
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
